@@ -51,7 +51,9 @@ Unlike simple survey tools, StudyWeave features a **custom competency engine**, 
 |:---:|
 <img width="1652" height="814" alt="Screenshot 2026-01-06 at 4 08 58 PM" src="https://github.com/user-attachments/assets/3570181c-96c9-4dfa-a96e-1255f19453dc" />
 <img width="1659" height="783" alt="Screenshot 2026-01-06 at 4 09 12 PM" src="https://github.com/user-attachments/assets/7e22e292-065f-4911-ae3f-bcc18a479ab6" />
+<img width="1071" height="759" alt="Screenshot 2026-01-06 at 4 18 50 PM" src="https://github.com/user-attachments/assets/665b55aa-84c5-4c3d-89a8-8d88d77001ce" />
 
+---
 
 
 
