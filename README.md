@@ -103,6 +103,7 @@ GEMINI_LLM_NAME=gemini-2.5-flash # Specific model version (e.g., gemini-1.5-pro 
 gemini-2.5-flash)
 ```
 3. Database Initialization
+
 You must build the schema and seed initial data (admin accounts, templates) or you will be unable to log in.
 
 Run the following commands inside the */server* directory:
@@ -116,6 +117,7 @@ npx sequelize-cli db:seed:all
 ```
 
 4. Frontend Setup
+
 Navigate to the client directory and install dependencies:
 ```bash 
 cd client
