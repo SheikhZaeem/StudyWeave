@@ -56,7 +56,7 @@ Unlike simple survey tools, StudyWeave features a **custom competency engine**, 
 ---
 
 ## ⚙️ Installation & Configuration
-Clone the repo and run ```bash npm install ``` in both server and client.
+Clone the repo and run *npm install* in both server and client.
 
 ##### Backend Setup
 1. Navigate to the server directory and install dependencies:
@@ -66,24 +66,24 @@ cd server
 npm install
 ```
 
-2. Create a .env file in the server directory and configure the following variables:
+2. Create a .env file in the root directory and configure the following variables:
 
 ```bash 
-NODE_ENV=development # Sets the environment (development/production)
-PORT=5200   # The port the Express API will listen on
+NODE_ENV=development   # Sets the environment (development/production)
+PORT=5200              # The port the Express API will listen on
 
 # --- Database Configuration ---
 # The application uses individual variables to construct the connection.
-DB_HOST=127.0.0.1 # Database server address (localhost)
-DB_PORT=5432 # Default PostgreSQL port
-DB_NAME=study_weave_db # The name of your specific database
-DB_USER=postgres # Your database username
-DB_PASSWORD=postgres # Your database password
+DB_HOST=127.0.0.1          # Database server address (localhost)
+DB_PORT=5432               # Default PostgreSQL port
+DB_NAME=study_weave_db     # The name of your specific database
+DB_USER=postgres           # Database username
+DB_PASSWORD=postgres       # Database password
 
 # --- Auth / Security ---
 JWT_SECRET=change_this_to_a_long_random_string # Used to sign login tokens
 # --- Email Services (SMTP) ---
-# Required for "Forgot Password" and email notifications.
+# Required for "Authentication", "Forgot Password" and email notifications.
 # Example below uses Mailtrap for testing.
 SMTP_HOST=sandbox.smtp.mailtrap.io
 SMTP_PORT=2525
@@ -103,8 +103,10 @@ GEMINI_LLM_NAME=gemini-2.5-flash # Specific model version (e.g., gemini-1.5-pro 
 gemini-2.5-flash)
 ```
 3. Database Initialization
-Build the schema and seed initial data (admin accounts, templates) or you will be unable to log in.
-Run the following commands inside the ```bash /server``` directory:
+You must build the schema and seed initial data (admin accounts, templates) or you will be unable to log in.
+
+Run the following commands inside the */server* directory:
+
 ```bash
 # 1. Create tables based on Models
 npx sequelize-cli db:migrate
@@ -122,12 +124,16 @@ npm install
 
 ## 🚀 Usage
 You must run two terminal processes simultaneously
+
 Terminal 1: Start the Backend
+
 ```bash 
 cd server
 npm run dev
 ```
+
 Terminal 2: Start the Frontend
+
 ```bash 
 cd client
 npm run dev
